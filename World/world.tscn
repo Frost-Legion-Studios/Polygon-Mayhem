@@ -5,4 +5,3 @@
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_plx0h")]
-speed = 300
