@@ -7,6 +7,8 @@ var direction : Vector2 = Vector2.ZERO
 
 func _process(delta):
 	
+	look_at(get_global_mouse_position())
+	
 	move()
 
 
