@@ -7,6 +7,7 @@ extends CharacterBody2D
 var direction : Vector2 = Vector2.ZERO
 
 func _process(delta):
+	Gamedata.player_position = position
 	
 	look_at(get_global_mouse_position())
 	
