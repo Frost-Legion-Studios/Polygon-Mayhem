@@ -13,3 +13,5 @@ func _process(delta):
 	velocity = target_direction * move_speed 
 	
 	move_and_slide()
+	
+	look_at(player_position)
