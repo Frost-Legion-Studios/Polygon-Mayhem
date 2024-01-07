@@ -8,3 +8,7 @@ script = ExtResource("1_xpeg6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xrbw8")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PackedVector2Array(-64, -51, -38, -51, 40, -12, 40, 13, -38, 51, -64, 51)
