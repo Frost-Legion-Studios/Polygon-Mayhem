@@ -8,7 +8,7 @@ var target_direction : Vector2
 
 func _process(delta):
 	player_position = Gamedata.player_position
-	target_direction = (position - player_position).normalized()
+	target_direction = (player_position - position).normalized()
 	
 	velocity = target_direction * move_speed 
 	
