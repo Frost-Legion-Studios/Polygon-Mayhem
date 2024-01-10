@@ -9,6 +9,7 @@ func _ready():
 	for child in get_children():
 		if child is State:
 			states[child.name] = child
+			child.transitioned.connect(on_state_transition)
 	if initial_state:
 		initial_state.enter()
 		current_state = initial_state
@@ -21,3 +22,6 @@ func _process(delta):
 func _physics_process(delta):
 	if current_state:
 		current_state.physics_update(delta)
+
+func on_state_transition(state, new_state_name):
+	pass
