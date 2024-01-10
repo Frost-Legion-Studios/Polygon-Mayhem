@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dq3frorjc2s81"]
+[gd_scene load_steps=4 format=3 uid="uid://dq3frorjc2s81"]
 
 [ext_resource type="Script" path="res://enemies/enemy_triangle/enemy_triangle.gd" id="1_xpeg6"]
 [ext_resource type="Texture2D" uid="uid://2mfqnnhgp374" path="res://enemies/enemy_triangle/enemy_triangle.png" id="1_xrbw8"]
+[ext_resource type="Script" path="res://enemies/enemy_triangle/triangle_state_machine.gd" id="3_gsnrd"]
 
 [node name="EnemyTriangle" type="CharacterBody2D"]
 script = ExtResource("1_xpeg6")
@@ -14,3 +15,6 @@ texture = ExtResource("1_xrbw8")
 scale = Vector2(0.5, 0.5)
 build_mode = 1
 polygon = PackedVector2Array(-64, -51, -38, -51, 40, -12, 40, 13, -38, 51, -64, 51)
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("3_gsnrd")
