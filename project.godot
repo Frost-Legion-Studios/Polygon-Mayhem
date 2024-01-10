@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Gamedata="*res://Autoloads/gamedata.gd"
+Gamedata="*res://autoloads/gamedata.gd"
 
 [dotnet]
 
