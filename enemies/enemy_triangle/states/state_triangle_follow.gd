@@ -12,3 +12,11 @@ func update(_delta : float):
 	
 	self_parent.velocity = (target_position-self_parent.position).normalized() * speed
 	self_parent.move_and_slide()
+	
+	in_dash_range(target_position, self_parent.position)
+
+
+
+func in_dash_range(target, parent):
+	if self_parent.position.distance_to(target) < 200:
+		transitioned.emit(self, "StateTriangleDash")
