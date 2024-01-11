@@ -10,3 +10,5 @@ func update(_delta : float):
 	target_position = Gamedata.player_position
 	self_parent.look_at(target_position)
 	
+	self_parent.velocity = (target_position-self_parent.position).normalized() * speed
+	self_parent.move_and_slide()
