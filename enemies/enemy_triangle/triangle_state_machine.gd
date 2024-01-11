@@ -27,7 +27,7 @@ func on_state_transition(state, new_state_name):
 	if state != current_state:
 		return
 	
-	var new_state = states.get(new_state_name.lower())
+	var new_state = states.get(new_state_name.to_lower())
 	if !new_state:
 		return
 	
