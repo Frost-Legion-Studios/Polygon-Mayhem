@@ -7,3 +7,6 @@ extends State
 var target_position : Vector2
 var is_dashing : bool
 
+func enter():
+	is_dashing = false
+
