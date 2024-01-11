@@ -26,5 +26,6 @@ initial_state = NodePath("StateTriangleFollow")
 script = ExtResource("4_8ccct")
 self_parent = NodePath("../..")
 
-[node name="StateTriangleDash" type="Node" parent="StateMachine"]
+[node name="StateTriangleDash" type="Node" parent="StateMachine" node_paths=PackedStringArray("self_parent")]
 script = ExtResource("5_dn5it")
+self_parent = NodePath("../..")
