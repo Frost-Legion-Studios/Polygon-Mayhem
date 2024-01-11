@@ -17,8 +17,9 @@ scale = Vector2(0.5, 0.5)
 build_mode = 1
 polygon = PackedVector2Array(-64, -51, -38, -51, 40, -12, 40, 13, -38, 51, -64, 51)
 
-[node name="StateMachine" type="Node" parent="."]
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("3_gsnrd")
+initial_state = NodePath("StateTriangleFollow")
 
 [node name="StateTriangleFollow" type="Node" parent="StateMachine" node_paths=PackedStringArray("self_parent")]
 script = ExtResource("4_8ccct")
