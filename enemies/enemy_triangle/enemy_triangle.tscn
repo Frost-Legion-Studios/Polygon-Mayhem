@@ -33,3 +33,5 @@ self_parent = NodePath("../..")
 [node name="StateTriangleDash" type="Node" parent="StateMachine" node_paths=PackedStringArray("self_parent")]
 script = ExtResource("5_dn5it")
 self_parent = NodePath("../..")
+
+[connection signal="timeout" from="Timer" to="StateMachine/StateTriangleFollow" method="_on_timer_timeout"]
