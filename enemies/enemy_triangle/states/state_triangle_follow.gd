@@ -5,6 +5,8 @@ extends State
 @export var speed : int = 330
 
 var target_position : Vector2
+var can_dash : bool = true
+
 @onready var timer : Timer = self_parent.get_node("Timer")
 
 
