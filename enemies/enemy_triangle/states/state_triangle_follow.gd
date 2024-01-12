@@ -24,3 +24,7 @@ func update(_delta : float):
 func in_dash_range(target, parent):
 	if self_parent.position.distance_to(target) < 250:
 		transitioned.emit(self, "StateTriangleDash")
+
+
+func _on_timer_timeout():
+	can_dash = true
