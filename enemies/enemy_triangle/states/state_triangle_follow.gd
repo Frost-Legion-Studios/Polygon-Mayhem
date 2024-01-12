@@ -3,6 +3,7 @@ extends State
 
 @export var self_parent : CharacterBody2D
 @export var speed : int = 330
+
 var target_position : Vector2
 
 
