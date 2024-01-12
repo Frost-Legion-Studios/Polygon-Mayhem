@@ -22,7 +22,7 @@ func update(_delta : float):
 
 
 func in_dash_range(target, parent):
-	if parent.position.distance_to(target) < 250 && can_dash == true:
+	if parent.distance_to(target) < 250 && can_dash == true:
 		can_dash = false
 		timer.start()
 		transitioned.emit(self, "StateTriangleDash")
