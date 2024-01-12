@@ -21,7 +21,9 @@ func update(_delta):
 		await get_tree().create_timer(0.6).timeout
 		
 		#Dash length
-		self_parent.velocity = (Vector2(cos(self_parent.rotation), sin(self_parent.rotation))) * dash_speed
+		self_parent.velocity = (Vector2(cos(self_parent.rotation), 
+		sin(self_parent.rotation))) * dash_speed
+		
 		await get_tree().create_timer(0.4).timeout
 		#Cooldown
 		self_parent.velocity = Vector2.ZERO
