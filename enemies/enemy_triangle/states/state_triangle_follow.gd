@@ -5,6 +5,7 @@ extends State
 @export var speed : int = 330
 
 var target_position : Vector2
+@onready var timer : Timer = self_parent.get_node("Timer")
 
 
 func update(_delta : float):
