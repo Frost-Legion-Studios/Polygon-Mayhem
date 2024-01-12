@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 Gamedata="*res://autoloads/gamedata.gd"
 
+[display]
+
+window/size/viewport_width=1360
+window/size/viewport_height=768
+
 [dotnet]
 
 project/assembly_name="Polygon Mayhem"
