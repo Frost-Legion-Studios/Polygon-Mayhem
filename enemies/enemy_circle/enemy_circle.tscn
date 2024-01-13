@@ -6,6 +6,8 @@
 radius = 23.0
 
 [node name="EnemyCircle" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_00pq4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_cxtnb")
