@@ -24,3 +24,7 @@ func move():
 		velocity = direction * walk_speed
 	
 	move_and_slide()
+
+
+func _on_hurt_box_body_entered(body):
+	queue_free()
